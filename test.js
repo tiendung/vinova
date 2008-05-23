@@ -91,9 +91,8 @@ jQuery( document ).ready( function () {
     "tuển"    : "3t-w-ê-n",
     "quỵt"    : "5k-w-i-t",
     "lâng"    : "0l--â-ng",
-    "aacs"    : "0--â-k",
-    "giaacs"  : "1z--â-k",
-    ""  : "",
+    "ấc"      : "1--â-k",
+    "giấc"    : "1z--â-k",
     ""  : "",
     ""  : "",
     ""  : "",
@@ -103,7 +102,7 @@ jQuery( document ).ready( function () {
   };
   
   var pass = 0, total = 0;
-  vinova.toggle('log');
+  vinova.log('turn off');
   for ( var prop in testCase ) {
     total++;
     var value = testCase[ prop ];
@@ -115,5 +114,5 @@ jQuery( document ).ready( function () {
     console.log();
   }
   console.log("Pass: ", pass, ", Fail: ", total - pass, ", Total: ", total);
-  vinova.toggle('log');
+  vinova.log('turn off');
 });
